@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://cd-cdb-joh2p8ku.sql.tencentcdb.com:22244/PriceComparison
+    username: root
+    password: Zr123456
+  security:
+    user:
+      name: morri
+      password: 123456
