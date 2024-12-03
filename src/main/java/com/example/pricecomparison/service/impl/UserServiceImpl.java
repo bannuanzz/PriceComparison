@@ -1,6 +1,6 @@
 package com.example.pricecomparison.service.impl;
 
-import com.example.pricecomparison.utils.BCryptUtil;
+//import com.example.pricecomparison.utils.BCryptUtil;
 
 import com.example.pricecomparison.entity.User;
 import com.example.pricecomparison.mapper.UserMapper;
@@ -16,9 +16,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public void Register(String username, String password, String email) {
         //密码加密处理
-        String encryptedPassword = BCryptUtil.encrypt(password);
-        userMapper.add(username, encryptedPassword, email);
-
+//        String encryptedPassword = BCryptUtil.encrypt(password);
+        userMapper.add(username, password, email);
 
     }
 

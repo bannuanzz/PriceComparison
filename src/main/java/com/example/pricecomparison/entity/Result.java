@@ -12,12 +12,6 @@ public class Result<T> {
     private String msg;
     private T data;
 
-    /// *
-    /// code 0 success
-    /// code 1 exist user
-    /// code 2 user too short or too long
-    /// code 3 password too short or too long
-    /// code 4 email is not valid (exist or invalid format )
     public static <T> Result<T> success(T data) {
         return new Result<>(0, "Success", data);
     }
