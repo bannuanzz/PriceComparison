@@ -15,5 +15,5 @@ public interface UserMapper {
     void add(String username, String password, String email);
 
     @Select("select * from user where email=#{email}")
-    boolean findByEmail(String email);
+    User findByEmail(String email);
 }
